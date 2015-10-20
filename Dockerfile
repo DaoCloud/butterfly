@@ -2,7 +2,7 @@ FROM python:2.7
 
 RUN apt-get install -y libffi-dev libssl-dev
 RUN pip install butterfly
-RUN echo "root\daocloud\n" | passwd root
+RUN echo "root\root\n" | passwd root
 
 EXPOSE 9191
 ENTRYPOINT ["butterfly.server.py"]
